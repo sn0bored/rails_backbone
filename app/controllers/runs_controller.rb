@@ -6,4 +6,9 @@ class RunsController < ApplicationController
 		respond_with @runs
 	end
 
+	def show
+		@run = Run.find(params[:id])
+		respond_with @run
+	end
+
 end
